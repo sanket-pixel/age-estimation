@@ -46,7 +46,7 @@ class Face(Dataset):
 
     def __getitem__(self, idx):
         file_name = self.data.iloc[idx]['file_name']
-        age = self.data.iloc[idx]['age']
+        age = torch.Tensor([self.data.iloc[idx]['age']-1]).long()
         img = cv2.imread(os.path.join('data/utk_sample',file_name))
         img = self.transform(img)
         return img,age
