@@ -42,3 +42,10 @@ and model evaluation. Specifically, the notebook first visualizes the given data
 to visualize the normalized version and then visualize the predicted probability distribution.
 As shown below, the given face image has the age label of 22, and the predicted probability distribution has it's peak at 22.
 This imples that the trained model is able to learn the task of predicting probability.
+
+### Age : 22
+<p align="left">
+  <img src="data/sample.jpg" />
+  <img src="data/distribution.png" />
+</p>
+
